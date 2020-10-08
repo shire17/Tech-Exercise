@@ -1,0 +1,6 @@
+CSS Buttons: https://www.w3schools.com/css/css3_buttons.asp 
+https://www.w3schools.com/css/tryit.asp?filename=trycss_buttons_fade
+
+HTML Title: https://www.w3schools.com/tags/tag_title.asp
+
+Redirect a button: https://stackoverflow.com/questions/16562577/how-can-i-make-a-button-redirect-my-page-to-another-page
