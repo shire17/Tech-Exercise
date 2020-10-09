@@ -4,3 +4,7 @@ https://www.w3schools.com/css/tryit.asp?filename=trycss_buttons_fade
 HTML Title: https://www.w3schools.com/tags/tag_title.asp
 
 Redirect a button: https://stackoverflow.com/questions/16562577/how-can-i-make-a-button-redirect-my-page-to-another-page
+
+Submit form: https://www.w3schools.com/html/tryit.asp?filename=tryhtml_form_submit
+
+Error messages for fields: https://stackoverflow.com/questions/32708271/individual-error-messages-for-empty-form-fields-using-javascript

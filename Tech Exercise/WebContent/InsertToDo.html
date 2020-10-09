@@ -1,0 +1,120 @@
+<html>
+<head>
+<style>
+header {
+    color:black;
+    text-align:center;
+    padding:5px;
+    font-family:Georgia;
+    width: 1000;
+}
+body {
+	font-family: Georgia;
+}
+.button1 {
+	background-color: #4CAF50;
+	border: 2px solid black;
+	color: white;
+	text-align: center;
+	display: inline-block;
+	font-size: 16px;
+	padding: 16px 80px;
+	align-items: center;
+}
+.button2 {
+	background-color: #008CBA;
+	border: 2px solid black;
+	color: white;
+	text-align: center;
+	display: inline-block;
+	font-size: 16px;
+	padding: 16px 80px;
+	align-items: center;
+}
+button:hover {
+	opacity: 0.8;
+}
+footer {
+	position: fixed;
+	bottom: 0;
+    text-align:center;
+    padding:5px;	 	
+    display: inline-block;
+    width: 100%;
+    margin-top: 50px;
+}
+input {
+	width: 200px;
+}
+div {
+	text-align: center;
+}
+span {
+	font-size: 14;
+}
+</style>
+<script src="jquery-1.7.1.min.js"></script>
+<script>
+function validateForm() {
+    var x = document.forms["item"]["name"].value;
+    var y = document.forms["item"]["description"].value;
+    var z = document.forms["item"]["dueDate"].value;
+
+    var submit = true;
+
+    if (x == null || x == "") {
+        nameError = "Please enter a name";
+        document.getElementById("name_error").innerHTML = nameError;
+        submit = false;
+    }
+
+    if (y == null || y == "") {
+        descriptionError = "Please enter a description";
+        document.getElementById("description_error").innerHTML = descriptionError;
+        submit = false;
+    }
+
+    if (z == null || z == "") {
+        dateError = "Please enter a date";
+        document.getElementById("date_error").innerHTML = dateError;
+        submit = false;
+    }
+
+    return submit;
+}
+
+function removeWarning() {
+    document.getElementById(this.id + "_error").innerHTML = "";
+}
+
+document.getElementById("name").onkeyup = removeWarning;
+document.getElementById("description").onkeyup = removeWarning;
+document.getElementById("date").onkeyup = removeWarning;
+
+// TODO: Get error messages to show
+// TODO: Run script on submit
+</script>
+</head>
+
+<title>Add To-Do</title>
+<body>
+<header>
+<button style="float:left"class="button2 button:hover" type="submit" onclick="window.location.href='/Tech_Exercise/HomePage.html'">Home</button>
+<h1 style="display:inline-block"> Add A To-Do Item </h1>
+</header>
+<div>
+<form id="item" onsubmit="return validateForm();">
+  <label for="name">Name</label><br>
+  <input type="text" id="name" name="name"><br><span id="name_error"></span><br><br>
+  <label for="description">Description</label><br>
+  <input type="text" id="description" name="description"><br><span id="description_error"></span><br><br>
+  <label for="dueDate">Due Date</label><br>
+  <input type="date" id="dueDate" name="dueDate" ><br><span id="date_error"></span><br><br>
+  <button class="button1 button:hover" type="submit">Add To List</button>
+</form>
+</div>
+<footer>
+Copyright © Shannon Hire 2020
+</footer>
+</body>
+</html>
