@@ -8,3 +8,13 @@ Redirect a button: https://stackoverflow.com/questions/16562577/how-can-i-make-a
 Submit form: https://www.w3schools.com/html/tryit.asp?filename=tryhtml_form_submit
 
 Error messages for fields: https://stackoverflow.com/questions/32708271/individual-error-messages-for-empty-form-fields-using-javascript
+
+Having different actions for each button on a form: https://www.w3schools.com/tags/att_button_formaction.asp
+
+
+
+When clicking on Show All, load Display.java which will print out all of the data from the database, sorting by due date
+
+Find a way for the servlet to include buttons that would let you delete an item
+
+Figure out how to display an error message if a user does not enter a value into a textbox when adding an item
