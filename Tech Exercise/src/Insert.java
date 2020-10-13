@@ -55,8 +55,8 @@ public class Insert extends HttpServlet {
 	      String title = "Insert";
 	      String header = "Inserted the following into your to-do list:";
 	      String docType = "<!doctype html public \"-//w3c//dtd html 4.0 " + "transitional//en\">\n";
-	      out.println(docType + //
-	            "<html>\n" + //
+	      out.println(docType +
+	            "<html>\n" +
 	    		  "<head>\n"
 	    		  + "<style>\n" + 
 	    		  "header {\n" + 

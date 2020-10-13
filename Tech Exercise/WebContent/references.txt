@@ -11,9 +11,15 @@ Error messages for fields: https://stackoverflow.com/questions/32708271/individu
 
 Having different actions for each button on a form: https://www.w3schools.com/tags/att_button_formaction.asp
 
+Check if ResultSet is empty: https://javarevisited.blogspot.com/2016/10/how-to-check-if-resultset-is-empty-in-Java-JDBC.html
 
+Simple form search provided on Canvas
 
 When clicking on Show All, load Display.java which will print out all of the data from the database, sorting by due date
+
+Dropdowns in CSS: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_js_dropdown_hover
+
+Maybe allow a user to sort by Name/Description
 
 Find a way for the servlet to include buttons that would let you delete an item
 
