@@ -53,7 +53,10 @@ public class Insert extends HttpServlet {
 	      response.setContentType("text/html");
 	      PrintWriter out = response.getWriter();
 	      String title = "Insert";
-	      String header = "Inserted the following into your to-do list:";
+	      String header;
+	      if (name != "" && description != "" && dueDate != "" 
+	    		  && name != null && description != null && dueDate != null) header = "Inserted the following into your to-do list:";
+	      else header = "Unable to add item; please make sure all fields are filled in.";
 	      String docType = "<!doctype html public \"-//w3c//dtd html 4.0 " + "transitional//en\">\n";
 	      out.println(docType +
 	            "<html>\n" +
@@ -114,16 +117,17 @@ public class Insert extends HttpServlet {
 	    		  "}\n" + 
 	    		  "</style>\n" +
 	    		  "</head>\n" +
-	            "<title>" + title + "</title>\n" + //
+	            "<title>" + title + "</title>\n" +
 	            "<body>\n" + //
-	            "<header><p style=\"font-size: 24px;\">" + header + "</p></header>\n" + //
+	            "<header><p style=\"font-size: 24px;\">" + header + "</p></header>\n");
+	      if (name != "" && description != "" && dueDate != ""
+	    		  && name != null && description != null && dueDate != null) out.println(
 	            "<div>" +
 	        	"  <li><b>Name</b>: " + name + "\n" + //
-	            "  <br><li><b>Description</b>: " + description + "\n" + //
-	            "  <br><li><b>Due Date</b>: " + dueDate + "<br>\n" + //
-	            "</div>" +
-	            "<div>\n" + //
-	            "<form action=\"View\" method=\"get\">" +
+	            "  <br><li><b>Description</b>: " + description + "\n" +
+	            "  <br><li><b>Due Date</b>: " + dueDate + "<br>\n" +
+	            "</div>");
+	      out.println("<div><form action=\"View\" method=\"get\">" +
 	        	"<button class=\"button1 button:hover\" type=\"submit\" formaction=\"/Tech_Exercise/HomePage.html\">Home</button>" +
 	        	"&nbsp;<button class=\"button2 button:hover\" type=\"submit\" formaction=\"/Tech_Exercise/InsertToDo.html\">Add Another Item</button>" +
 	        	"&nbsp;<button class=\"button3 button:hover\" type=\"submit\">View Your List</button>" +

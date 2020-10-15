@@ -19,6 +19,8 @@ When clicking on Show All, load Display.java which will print out all of the dat
 
 Dropdowns in CSS: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_js_dropdown_hover
 
+Executing a delete query: https://stackoverflow.com/questions/1905607/cannot-issue-data-manipulation-statements-with-executequery
+
 Maybe allow a user to sort by Name/Description
 
 Find a way for the servlet to include buttons that would let you delete an item
