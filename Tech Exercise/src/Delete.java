@@ -119,7 +119,7 @@ public class Delete extends HttpServlet {
 	         preparedStatement.setString(1, name);
 	         preparedStatement.execute();
 	         out.println("</div>");
-	         out.println("<p style=\"text-align:center\">Deleted \"" + name +  "\" from your to-do list:</p><br>");
+	         out.println("<p style=\"text-align:center\">Deleted \"" + name +  "\" from your to-do list</p><br>");
 	         out.println("<div>\n" + 
 	         		"	<form action=\"View\" method=\"get\">\n" + 
 	         		"	<button class=\"button1 button:hover\" type=\"submit\" formaction=\"/Tech_Exercise/InsertToDo.html\">Add An Item</button>\n" + 

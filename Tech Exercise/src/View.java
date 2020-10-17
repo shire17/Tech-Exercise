@@ -108,7 +108,7 @@ public class View extends HttpServlet {
 	         preparedStatement = connection.prepareStatement(selectSQL);
 	         ResultSet rs = preparedStatement.executeQuery();
 	         if (rs.next() == false) {
-	        	 out.println("<b>No To-Do Items!</b>");
+	        	 out.println("<p style=\"text-align:left; margin-left: 300px;\"><b>No To-Do Items!</b></p>");
 	         } else {
 	        	 do {
 	 	            String name = rs.getString("name").trim();
