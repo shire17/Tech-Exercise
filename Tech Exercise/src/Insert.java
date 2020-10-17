@@ -127,9 +127,9 @@ public class Insert extends HttpServlet {
 	            "  <br><li><b>Description</b>: " + description + "\n" +
 	            "  <br><li><b>Due Date</b>: " + dueDate + "<br>\n" +
 	            "</div>");
-	      out.println("<div><form action=\"View\" method=\"get\">" +
-	        	"<button class=\"button1 button:hover\" type=\"submit\" formaction=\"/Tech_Exercise/HomePage.html\">Home</button>" +
-	        	"&nbsp;<button class=\"button2 button:hover\" type=\"submit\" formaction=\"/Tech_Exercise/InsertToDo.html\">Add Another Item</button>" +
+	      out.println("<div><form action=\"View\" method=\"GET\">" +
+	        	"<button class=\"button1 button:hover\" type=\"submit\" formaction=\"/Tech%20Exercise/HomePage.html\">Home</button>" +
+	        	"&nbsp;<button class=\"button2 button:hover\" type=\"submit\" formaction=\"/Tech%20Exercise/InsertToDo.html\">Add Another Item</button>" +
 	        	"&nbsp;<button class=\"button3 button:hover\" type=\"submit\">View Your List</button>" +
 	            "</div>\n" +
 	            "<footer>\n" +

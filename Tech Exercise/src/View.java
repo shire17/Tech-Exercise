@@ -117,7 +117,7 @@ public class View extends HttpServlet {
 		            out.print("<b>Name: </b>" + name + " &nbsp;");
 		            out.print("<b>Description: </b>" + description + " &nbsp;");
 		            out.print("<b>Due Date: </b>" + dueDate + "&nbsp;");
-		            out.print("<button type=\"submit\" onclick=\"window.location.href='/Tech_Exercise/Delete?name="
+		            out.print("<button type=\"submit\" onclick=\"window.location.href='/Tech%20Exercise/Delete?name="
 		            		+ name
 		            		+"'\">&times;</button><br><br>");
 	        	 } while (rs.next());
