@@ -122,9 +122,9 @@ public class Delete extends HttpServlet {
 	         out.println("<p style=\"text-align:center\">Deleted \"" + name +  "\" from your to-do list</p><br>");
 	         out.println("<div>\n" + 
 	         		"	<form action=\"View\" method=\"get\">\n" + 
-	         		"	<button class=\"button1 button:hover\" type=\"submit\" formaction=\"/Tech_Exercise/InsertToDo.html\">Add An Item</button>\n" + 
+	         		"	<button class=\"button1 button:hover\" type=\"submit\" formaction=\"/Tech%20Exercise/InsertToDo.html\">Add An Item</button>\n" + 
 	         		"	<button class=\"button2 button:hover\" type=\"submit\">View Your Items</button>\n" + 
-	         		"	<button class=\"button3 button:hover\" type=\"submit\" formaction=\"/Tech_Exercise/HomePage.html\">Home</button>\n" +
+	         		"	<button class=\"button3 button:hover\" type=\"submit\" formaction=\"/Tech%20Exercise/HomePage.html\">Home</button>\n" +
 	         		"	</form>\n" + 
 	         		"</div>");
 	         out.println("<footer>Copyright © Shannon Hire 2020</footer></body></html>");
