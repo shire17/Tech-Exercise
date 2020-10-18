@@ -125,7 +125,7 @@ public class Insert extends HttpServlet {
 	            "<div>" +
 	        	"  <li><b>Name</b>: " + name + "\n" + //
 	            "  <br><li><b>Description</b>: " + description + "\n" +
-	            "  <br><li><b>Due Date</b>: " + dueDate + "<br>\n" +
+	            "  <br><li><b>Due Date</b>: " + dueDate + "<br><br>\n" +
 	            "</div>");
 	      out.println("<div><form action=\"View\" method=\"GET\">" +
 	        	"<button class=\"button1 button:hover\" type=\"submit\" formaction=\"/Tech%20Exercise/HomePage.html\">Home</button>" +

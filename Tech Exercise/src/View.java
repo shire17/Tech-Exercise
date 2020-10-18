@@ -124,8 +124,8 @@ public class View extends HttpServlet {
 	         }
 	         out.println("</div>");
 	         out.println("<div>");
-	         out.println("<button class=\"button1 button:hover\" type=\"submit\" onclick=\"window.location.href='/Tech_Exercise/HomePage.html'\">Home</button>");
-	         out.println("<button class=\"button2 button:hover\" type=\"submit\" onclick=\"window.location.href='/Tech_Exercise/InsertToDo.html'\">Add An Item</button>");
+	         out.println("<button class=\"button1 button:hover\" type=\"submit\" onclick=\"window.location.href='/Tech%20Exercise/HomePage.html'\">Home</button>");
+	         out.println("<button class=\"button2 button:hover\" type=\"submit\" onclick=\"window.location.href='/Tech%20Exercise/InsertToDo.html'\">Add An Item</button>");
 	         out.println("</div>");
 	         out.println("<footer>Copyright © Shannon Hire 2020</footer></body></html>");
 	         rs.close();
